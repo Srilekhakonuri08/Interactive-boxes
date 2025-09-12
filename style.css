@@ -1,0 +1,142 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: Arial, sans-serif; 
+}
+
+body {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background: #f9f9f9; 
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff; 
+  padding: 20px;
+  width: 95%; 
+  max-width: 420px;
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.heading {
+  text-align: center; 
+  color: #e91e63;
+  margin-bottom: 15px; 
+  font-size: 18px;
+}
+
+.box {
+  border: 2px solid #ddd;
+  border-radius: 8px; 
+  margin: 12px 0;
+  cursor: pointer; 
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.box.active { 
+  border-color: #e91e63; 
+  background: #fff9fb; 
+}
+
+.box-header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 12px;
+}
+
+.left { 
+  display: flex; 
+  align-items: center; 
+  gap: 6px; 
+}
+
+.unit { 
+  font-weight: bold; 
+}
+
+.price { 
+  font-weight: bold; 
+  font-size: 14px; 
+  color: #222; 
+}
+
+.old-price { 
+  font-size: 12px; 
+  color: #888; 
+  text-decoration: line-through; 
+  margin-left: 4px; 
+}
+
+.tag {
+  font-size: 11px; 
+  padding: 2px 5px; 
+  border-radius: 4px; 
+  color: #fff;
+}
+
+.red { background: #e53935; }
+.green { background: #43a047; }
+.blue { background: #1e88e5; }
+.highlight { background: #ff9800; color: #fff; }
+
+.options { 
+  display: none; 
+  padding: 12px; 
+  background: #fff; 
+  border-top: 1px solid #eee;
+}
+
+.box.active .options { 
+  display: block; 
+}
+
+.row { 
+  margin: 8px 0; 
+  display: flex; 
+  gap: 8px; 
+  align-items: center; 
+}
+
+select {
+  padding: 5px; 
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.footer { 
+  text-align: center; 
+  margin-top: 15px; 
+}
+
+.free { 
+  color: #e91e63; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+.total { 
+  margin: 8px 0; 
+  font-weight: bold; 
+}
+
+#add-to-cart {
+  background: #ff4d6d; 
+  color: #fff;
+  border: none; 
+  padding: 12px; 
+  border-radius: 8px;
+  cursor: pointer; 
+  transition: background 0.3s;
+  width: 100%; 
+  font-size: 16px;
+}
+
+#add-to-cart:hover { 
+  background: #e63950; 
+}

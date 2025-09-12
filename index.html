@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="heading">YAY! It's BOGO Offer 🎉</h2>
+
+    <!-- Box 1 -->
+    <div class="box" data-price="10" data-name="1 Unit">
+      <div class="box-header">
+        <div class="left">
+          <span class="unit">1 Unit</span>
+          <span class="tag red">10% Off</span>
+        </div>
+        <div class="right">
+          <span class="price">$10.00 USD</span>
+          <span class="old-price">$14.00 USD</span>
+        </div>
+      </div>
+      <div class="options">
+        <p>Standard Price</p>
+      </div>
+    </div>
+
+    <!-- Box 2 (Updated with Size + Color) -->
+    <div class="box" data-price="18" data-name="2 Unit">
+      <div class="box-header">
+        <div class="left">
+          <span class="unit">2 Unit</span>
+          <span class="tag green">20% Off</span>
+          <span class="tag highlight">Most Popular</span>
+        </div>
+        <div class="right">
+          <span class="price">$18.00 USD</span>
+          <span class="old-price">$22.00 USD</span>
+        </div>
+      </div>
+      <div class="options">
+        <div class="row">
+          <label>#1:</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option>Black</option><option>White</option><option>Blue</option>
+          </select>
+        </div>
+        <div class="row">
+          <label>#2:</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option>Black</option><option>White</option><option>Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box" data-price="24" data-name="3 Unit">
+      <div class="box-header">
+        <div class="left">
+          <span class="unit">3 Unit</span>
+          <span class="tag blue">30% Off</span>
+        </div>
+        <div class="right">
+          <span class="price">$24.00 USD</span>
+          <span class="old-price">$30.00 USD</span>
+        </div>
+      </div>
+      <div class="options">
+        <p>Great Value Pack</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="free">Free Delivery</p>
+      <p class="total">Total: <span id="total-price">$0.00 USD</span></p>
+      <button id="add-to-cart">+ Add to Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
